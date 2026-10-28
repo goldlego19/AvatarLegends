@@ -1,0 +1,21 @@
+modLoader="lowcodefml"
+showAsResourcePack = false
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="avlegends"
+version="1.0.0"
+logoFile = "logo.png"
+logoBlur = false
+displayName="Avatar Legends"
+description='''
+An Avatar Palladium Addon
+'''
+
+[[dependencies.avlegends]]
+modId = "palladium"
+mandatory = true
+versionRange = "[4.4.1,)"
+ordering = "NONE"
+side = "BOTH"

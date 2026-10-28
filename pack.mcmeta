@@ -1,0 +1,13 @@
+{
+    "pack": {
+        "id": "avlegends",
+        "pack_format": 15,
+        "description": "An Avatar Palladium Addon",
+        "version": "1.0.0"
+    },
+    "dependencies": {
+        "common": {},
+        "fabric": {},
+        "forge": {}
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.air_scooter.roll": {
+            "loop": true,
+            "animation_length": 1.0,
+            "bones": {
+                "air_scooter_heading": {
+                    "rotation": [0, "query.avlegends_scooter_yaw", 0]
+                },
+                "air_scooter_ball": {
+                    "rotation": ["query.avlegends_scooter_roll", 0, 0]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "schemaVersion": 1,
+    "authors": [
+        "TheAssassin96"
+    ],
+    "environment": "*",
+    "id": "avlegends",
+    "version": "1.0.0",
+    "name": "Avatar Legends",
+    "description": "An Avatar Palladium Addon",
+    "icon": "logo.png",
+    "license": "All rights reserved"
+}

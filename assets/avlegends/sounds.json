@@ -1,0 +1,17 @@
+{
+    "air_scooter.start": {
+        "sounds": [
+            {"name": "avlegends:air_scooter/air_scooter_start", "stream": false}
+        ]
+    },
+    "air_scooter.loop": {
+        "sounds": [
+            {"name": "avlegends:air_scooter/air_scooter_loop", "stream": true}
+        ]
+    },
+    "air_scooter.end": {
+        "sounds": [
+            {"name": "avlegends:air_scooter/air_sccoter_end", "stream": false}
+        ]
+    }
+}

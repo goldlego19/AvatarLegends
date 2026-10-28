@@ -1,0 +1,15 @@
+{
+    "type": "geckolib:default",
+    "model": {
+        "normal": "avlegends:geo/air_scooter_pose.geo.json",
+        "slim": "avlegends:geo/air_scooter_pose_slim.geo.json"
+    },
+    "texture": "#entity",
+    "render_type": "cutout",
+    "tint": [
+        255,
+        255,
+        255,
+        255
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "type": "palladium:compound",
+    "layers": [
+        {
+            "type": "geckolib:default",
+            "model": "avlegends:geo/air_scooter_core_inner.geo.json",
+            "texture": "minecraft:textures/block/white_wool.png",
+            "animation_file": "avlegends:animations/air_scooter_core.animation.json",
+            "animation_controller": {
+                "name": "main",
+                "transition_tick_time": 0,
+                "animation": [
+                    {
+                        "type": "then_loop",
+                        "animation": "animation.air_scooter.core_glow"
+                    }
+                ]
+            },
+            "render_type": "glow",
+            "tint": [
+                235,
+                250,
+                255,
+                210
+            ]
+        },
+        {
+            "type": "geckolib:default",
+            "model": "avlegends:geo/air_scooter_core_halo.geo.json",
+            "texture": "minecraft:textures/block/white_wool.png",
+            "animation_file": "avlegends:animations/air_scooter_core.animation.json",
+            "animation_controller": {
+                "name": "main",
+                "transition_tick_time": 0,
+                "animation": [
+                    {
+                        "type": "then_loop",
+                        "animation": "animation.air_scooter.core_glow"
+                    }
+                ]
+            },
+            "render_type": "glow",
+            "tint": [
+                175,
+                225,
+                255,
+                42
+            ]
+        },
+        {
+            "type": "geckolib:default",
+            "model": "avlegends:geo/air_scooter_ball.geo.json",
+            "texture": "avlegends:textures/models/air_scooter_surface.png",
+            "animation_file": "avlegends:animations/air_scooter_ball.animation.json",
+            "animation_controller": {
+                "name": "main",
+                "transition_tick_time": 0,
+                "animation": [
+                    {
+                        "type": "then_loop",
+                        "animation": "animation.air_scooter.roll"
+                    }
+                ]
+            },
+            "render_type": "glow",
+            "tint": [
+                255,
+                255,
+                255,
+                255
+            ]
+        }
+    ]
+}

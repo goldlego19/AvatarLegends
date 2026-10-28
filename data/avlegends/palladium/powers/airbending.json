@@ -1,0 +1,238 @@
+{
+  "name": "Airbending",
+  "persistent_data": true,
+  "background": "minecraft:textures/block/white_wool.png",
+  "icon": "avlegends:textures/icons/airbending_emblem.png",
+  "gui_display_type": "tree",
+  "abilities": {
+    "air_scooter": {
+      "type": "palladium:dummy",
+      "icon": "avlegends:textures/icons/air_scooter.png",
+      "title": "Air Scooter",
+      "bar_color": "white",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": -1,
+      "gui_position": "null",
+      "gui_frame_type": "task",
+      "description": "Ride a sphere of compressed air for quick transportation. Toggle the ability to gain speed, higher jumps, automatic step-up, and protection from falls.",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:toggle",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false,
+            "allow_scrolling_when_crouching": true
+          }
+        ],
+        "unlocking": []
+      }
+    },
+    "air_scooter_speed": {
+      "type": "palladium:attribute_modifier",
+      "attribute": "minecraft:generic.movement_speed",
+      "amount": 0.25,
+      "operation": 0,
+      "uuid": "7d405620-b36c-4ae0-886f-4f82adbc3c6f",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_jump": {
+      "type": "palladium:attribute_modifier",
+      "attribute": "palladium:jump_power",
+      "amount": 0.75,
+      "operation": 0,
+      "uuid": "22c52ba6-e184-41aa-b769-61bf6e92b2ce",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_step_height": {
+      "type": "palladium:attribute_modifier",
+      "attribute": "forge:step_height_addition",
+      "amount": 0.6,
+      "operation": 0,
+      "uuid": "5440f673-637e-42c5-8765-1d37eb833c51",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_fall_resistance": {
+      "type": "palladium:attribute_modifier",
+      "attribute": "palladium:fall_resistance",
+      "amount": 100,
+      "operation": 0,
+      "uuid": "f2a8fc7e-4f19-40e9-b865-c34068673c95",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_ball": {
+      "type": "palladium:render_layer",
+      "render_layer": "avlegends:air_scooter_ball",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_animation": {
+      "type": "palladium:animation_timer",
+      "start_value": 0,
+      "max_value": 8,
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_particles": {
+      "type": "palladium:dummy",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_pose_limbs": {
+      "type": "palladium:render_layer",
+      "render_layer": "avlegends:air_scooter_pose",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_hide_limbs": {
+      "type": "palladium:hide_body_part",
+      "body_parts": [
+        "right_arm",
+        "right_arm_overlay",
+        "left_arm",
+        "left_arm_overlay",
+        "right_leg",
+        "right_leg_overlay",
+        "left_leg",
+        "left_leg_overlay"
+      ],
+      "affects_first_person": false,
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_sound_start": {
+      "type": "palladium:play_sound",
+      "sound": "avlegends:air_scooter.start",
+      "volume": 0.9,
+      "pitch": 1,
+      "looping": false,
+      "play_self": false,
+      "play_others": false,
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_sound_loop": {
+      "type": "palladium:play_sound",
+      "sound": "avlegends:air_scooter.loop",
+      "volume": 0.6,
+      "pitch": 1,
+      "looping": true,
+      "play_self": false,
+      "play_others": false,
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_enabled",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    },
+    "air_scooter_sound_end": {
+      "type": "palladium:play_sound",
+      "sound": "avlegends:air_scooter.end",
+      "volume": 0.9,
+      "pitch": 1,
+      "looping": false,
+      "play_self": false,
+      "play_others": false,
+      "hidden": true,
+      "hidden_in_bar": true,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:ability_last_tick",
+            "ability": "air_scooter"
+          }
+        ]
+      }
+    }
+  }
+}
